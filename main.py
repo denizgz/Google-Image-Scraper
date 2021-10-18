@@ -16,10 +16,10 @@ if __name__ == "__main__":
     image_path = os.path.normpath(os.getcwd()+"\\photos")
 
     #Add new search key into array ["cat","t-shirt","apple","orange","pear","fish"]
-    search_keys= ['apple','t-shirt']
+    search_keys= ['Mercedes-Benz S Class 2020']
 
     #Parameters
-    number_of_images = 100
+    number_of_images = 10
     headless = False
     min_resolution=(0,0)
     max_resolution=(9999,9999)
