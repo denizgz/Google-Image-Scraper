@@ -16,10 +16,21 @@ if __name__ == "__main__":
     image_path = os.path.normpath(os.getcwd()+"\\photos")
 
     #Add new search key into array ["cat","t-shirt","apple","orange","pear","fish"]
-    search_keys= ['Mercedes-Benz S Class 2020']
+    # 'Mercedes-Benz A-Class 2004', 'Mercedes-Benz A-Class 2012', 'Mercedes-Benz A-Class 2018' done
+    # 'Mercedes-Benz C-Class 2007', 'Mercedes-Benz C-Class 2014', 'Mercedes-Benz C-Class 2021' 
+    # 'Mercedes-Benz CLA-Class 2013', 'Mercedes-Benz CLA-Class 2019'
+    # 'Mercedes-Benz CLS-Class 2004', 'Mercedes-Benz CLS-Class 2011', 'Mercedes-Benz CLS-Class 2018'  
+    # 'Mercedes-Benz E-Class 2002', 'Mercedes-Benz E-Class 2009', 'Mercedes-Benz E-Class 2016' 
+    # 'Mercedes-Benz G-Class 1990', 'Mercedes-Benz G-Class 2017' 
+    # 'Mercedes-Benz S-Class 2005', 'Mercedes-Benz S-Class 2013', 'Mercedes-Benz S-Class 2020' 
+    # 'Mercedes-Benz Sprinter 2006', 'Mercedes-Benz A-Class 2018'
+    # 'Mercedes-Benz V-Class 2003', 'Mercedes-Benz A-Class 2014' 
+    # 'Mercedes-Benz GLS-Class 2006', 'Mercedes-Benz GLS-Class 2012', 'Mercedes-Benz GLS-Class 2019' 
+    # 'Mercedes-Benz GLE-Class 2005', 'Mercedes-Benz GLE-Class 2011', 'Mercedes-Benz GLE-Class 2019' 
+    search_keys= ['Mercedes-Benz B-Class 2005', 'Mercedes-Benz B-Class 2011', 'Mercedes-Benz B-Class 2019' ]
 
     #Parameters
-    number_of_images = 10
+    number_of_images = 100
     headless = False
     min_resolution=(0,0)
     max_resolution=(9999,9999)
