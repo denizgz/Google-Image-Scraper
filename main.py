@@ -28,7 +28,7 @@ if __name__ == "__main__":
     # 'Mercedes-Benz V-Class 2003', 'Mercedes-Benz A-Class 2014' 
     # 'Mercedes-Benz GLS-Class 2006', 'Mercedes-Benz GLS-Class 2012', 'Mercedes-Benz GLS-Class 2019' 
     # 'Mercedes-Benz GLE-Class 2005', 'Mercedes-Benz GLE-Class 2011', 'Mercedes-Benz GLE-Class 2019' 
-    search_keys= ['Mercedes-Benz CLA-Class 2013', 'Mercedes-Benz CLA-Class 2019']
+    search_keys= ['Mercedes-Benz CLS-Class 2004', 'Mercedes-Benz CLS-Class 2011', 'Mercedes-Benz CLS-Class 2018']
 
     #Parameters
     number_of_images = 100
