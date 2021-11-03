@@ -13,7 +13,7 @@ import os
 if __name__ == "__main__":
     #Define file path
     webdriver_path = os.path.normpath(os.getcwd()+"\\webdriver\\chromedriver.exe")
-    image_path = os.path.normpath(os.getcwd()+"\\mercedes-benz-3-nov")
+    image_path = os.path.normpath(os.getcwd()+"\\mercedes-benz-3-nov-#3")
 
     #Add new search key into array 
 
@@ -29,9 +29,14 @@ if __name__ == "__main__":
                 #    'Mercedes-Benz V-Class 2003', 'Mercedes-Benz V-Class 2014', 
                 #    'Mercedes-Benz GLS-Class 2006', 'Mercedes-Benz GLS-Class 2012', 'Mercedes-Benz GLS-Class 2019', 
                 #    'Mercedes-Benz GLE-Class 2005', 'Mercedes-Benz GLE-Class 2011', 'Mercedes-Benz GLE-Class 2019 
+                # 'Mercedes-Benz C-Class 2007', 'Mercedes-Benz C-Class 2021', 'Mercedes-Benz CLA-Class 2013', 'Mercedes-Benz E-Class 2009' less data
     search_keys= [
-               
-                'Mercedes-Benz C-Class 2007', 'Mercedes-Benz C-Class 2014', 'Mercedes-Benz CLA-Class 2013', 'Mercedes-Benz E-Class 2009']
+            "Mercedes-Benz B-Class 2019",
+            "Mercedes-Benz C-Class 2018",
+            "Mercedes-Benz CLS-Class 2021",
+            "Mercedes-Benz E-Class 2020",
+            "Mercedes-Benz GLA-Class 2020"
+]
 
     #Parameters
     number_of_images = 300
