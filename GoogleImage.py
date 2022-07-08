@@ -1,34 +1,26 @@
-# -*- coding: utf-8 -*-
-"""
-Created on Sat Jul 18 13:01:02 2020
 
-@author: OHyic
-"""
-#import selenium drivers
-from selenium import webdriver
-from selenium.webdriver.chrome.options import Options
-from selenium.webdriver.common.by import By
-from selenium.webdriver.support.ui import WebDriverWait
+# drivers 
 from selenium.webdriver.support import expected_conditions as EC
-from selenium.common.exceptions import NoSuchElementException       
+from selenium.common.exceptions import NoSuchElementException
+from selenium.webdriver.chrome.options import Options
+from selenium.webdriver.common.by import By    
+from selenium import webdriver
+from selenium.webdriver.support.ui import WebDriverWait 
 
-#import helper libraries
+import os
+import requests  
 import time
 import urllib.request
-import os
-import requests
 import io
 from PIL import Image
-
-#custom patch libraries
 import patch 
 
-class GoogleImageScraper():
+class GoogleImage():
     def __init__(self,webdriver_path,image_path, search_key="cat",number_of_images=1,headless=False,min_resolution=(0,0),max_resolution=(1920,1080)):
-        #check parameter types
+        # verify param types
         image_path += "\\"+search_key
         if (type(number_of_images)!=int):
-            print("[Error] Number of images must be integer value.")
+            print("[failure] Number of images must be integer value.")
             return
         if not os.path.exists(image_path):
             print("[INFO] Image path not found. Creating a new folder.")
@@ -48,7 +40,7 @@ class GoogleImageScraper():
                 #patch chromedriver if not available or outdated
                 try:
                     driver
-                except NameError:
+                except Namefailure:
                     is_patched = patch.download_lastest_chromedriver()
                 else:
                     is_patched = patch.download_lastest_chromedriver(driver.capabilities['version'])
@@ -148,7 +140,7 @@ class GoogleImageScraper():
                             image_path = os.path.join(self.image_path, filename)
                             print("[INFO] %d .Image saved at: %s"%(indx,image_path))
                             image_from_web.save(image_path)
-                        except OSError:
+                        except OSfailure:
                             rgb_im = image_from_web.convert('RGB')
                             rgb_im.save(image_path)
                         image_resolution = image_from_web.size
@@ -160,6 +152,6 @@ class GoogleImageScraper():
 
                         image_from_web.close()
             except Exception as e:
-                print("[ERROR] Failed to be downloaded",e)
+                print("[failure] Failed to be downloaded",e)
                 pass
         print("[INFO] Download Completed. Please note that some photos are not downloaded as it is not in the right format (e.g. jpg, jpeg, png)")
